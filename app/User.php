@@ -2,8 +2,8 @@
 
 namespace App;
 
-use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'nickname', 'email', 'password', 'identity', 'provider_id', 'avatar', 'status', 'confirmation_code', 'confirmed', 'country_code', 'phone', 'phone_confirmed', 'google2fa_secret',
     ];
 
     /**
